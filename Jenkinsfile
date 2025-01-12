@@ -26,5 +26,6 @@ pipeline {
                     currentBuild.result == null || currentBuild.result == 'SUCCESS'
                 }
             }
+        }
     }
 }
