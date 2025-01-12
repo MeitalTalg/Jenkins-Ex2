@@ -25,7 +25,13 @@ pipeline {
                 expression {
                     currentBuild.result == null || currentBuild.result == 'SUCCESS'
                 }
+            steps {
+                script {
+                    echo 'Deploying application...'
+                    echo "Application deployed successfully!"
+                }
             }
+        }
         }
     }
 }
