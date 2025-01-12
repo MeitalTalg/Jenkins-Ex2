@@ -7,7 +7,7 @@ pipeline {
                 script {
                     echo 'Installing Python libraries...'
                     sh 'echo "jenkins" | sudo -S apt update'
-                    sh 'echo "jenkins" | install python3 pytest python3-pip'
+                    sh 'echo "jenkins" | apt install python3 pytest python3-pip'
                 }
             }
         }
