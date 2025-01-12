@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'Installing Python libraries...'
-                    sh 'sudo apt update'
+                    sh 'echo "jenkins" | sudo -S apt update'
                     sh 'sudo apt install -y python3 pytest python3-pip'
                 }
             }
