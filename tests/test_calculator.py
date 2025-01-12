@@ -3,4 +3,5 @@
 import pytest
 #from calculator import add, subtract, multiply, divide
 
-print("working")
+def test_add():
+    print("working")
