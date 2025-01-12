@@ -6,9 +6,11 @@ pipeline {
             steps {
                 script {
                     echo 'Installing Python libraries...'
-                    echo $SHELL
+                    echo env.SHELL
                     sh 'sudo apt update'
-                    sh 'apt install -y python3 pytest python3-pip'
+                    sh 'sudo apt install -y python3 pytest python3-pip'
                 }
             }
         }
+    }
+}
